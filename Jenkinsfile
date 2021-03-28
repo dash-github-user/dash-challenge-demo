@@ -22,6 +22,9 @@ pipeline {
         stage('Publish') {
           steps {                    
             echo "Publish the code here to ECR/S3 etc., ..."
+            sh "git --version"
+            sh "ansible --version"
+            sh "terraform --version"
           }
         }   
 
