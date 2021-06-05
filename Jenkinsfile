@@ -2,9 +2,7 @@ pipeline {
     agent any 
     stages {
         stage('Build') {
-          steps {
-            python --version   
-            which zip   
+          steps { 
             echo "Build and test the code here..."
           }
         }    
