@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build') {
           steps {
-            ansible --version    
             python --version   
             which zip   
             echo "Build and test the code here..."
@@ -28,6 +27,7 @@ pipeline {
             sh "git --version"
             sh "ansible --version"
             sh "terraform --version"
+            sh "which zip"
           }
         }   
 
