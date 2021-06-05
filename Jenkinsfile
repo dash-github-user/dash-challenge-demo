@@ -2,7 +2,10 @@ pipeline {
     agent any 
     stages {
         stage('Build') {
-          steps {          
+          steps {
+            ansible --version    
+            python --version   
+            which zip   
             echo "Build and test the code here..."
           }
         }    
